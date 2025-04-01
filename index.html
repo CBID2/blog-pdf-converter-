@@ -3,24 +3,66 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Blog to PDF file Converter</title>
+		<title>Blog to PDF File Converter</title>
 	</head>
 	<body>
 		<main>
-			<h1>Blog to PDF file Converter</h1>
+			<h1>Blog to PDF File Converter</h1>
+			<p>
+				Convert any blog post into a clean, well-formatted PDF with just one
+				click.
+			</p>
+
+			<section>
+				<h2>How It Works</h2>
+				<ol>
+					<li>Enter the URL of the blog post you want to convert.</li>
+					<li>Click the "Convert to PDF" button.</li>
+					<li>Download your neatly formatted PDF file.</li>
+				</ol>
+			</section>
+
 			<section>
 				<form>
 					<label for="url">Enter the URL of the blog:</label>
 					<input type="url" id="url" name="url" required />
 					<button type="submit">Convert to PDF</button>
 				</form>
-				<script
-					src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-					integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-					crossorigin="anonymous"
-					referrerpolicy="no-referrer"></script>
-				<script src="script.js"></script>
 			</section>
+
+			<section>
+				<h2>Example Output</h2>
+				<img
+					src="../images/sample.png"
+					alt="Example of a converted blog post in PDF format"
+					width="300" />
+			</section>
+
+			<section>
+				<h2>FAQs</h2>
+				<details>
+					<summary>Is this tool free to use?</summary>
+					<p>Yes! You can use it as many times as you like.</p>
+				</details>
+				<details>
+					<summary>Can I customize the PDF formatting?</summary>
+					<p>
+						Currently, the formatting is standardized, but customization options
+						may be added in the future.
+					</p>
+				</details>
+			</section>
+
+			<footer>
+				<p>&copy; 2025 Blog to PDF Converter. All rights reserved.</p>
+			</footer>
+
+			<script
+				src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+				integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+				crossorigin="anonymous"
+				referrerpolicy="no-referrer"></script>
+			<script src="script.js"></script>
 		</main>
 	</body>
 </html>
